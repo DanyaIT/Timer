@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-image: url('https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Dancing Script', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer__container{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: antiquewhite;
 }
 
-.App-link {
-  color: #61dafb;
+
+.timer__top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timer__title{
+  margin-bottom: 10px;
+  font-size: 45px;
+  
+}
+
+.timer__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 5px wheat;
+
+}
+
+.timer__item{
+  padding: 10px;
+  text-align: center; 
+}
+
+.timer__value{
+  font-size: 40px;
+}
+
+.timer__span{
+  margin-bottom: 7%;
+  margin-left:2%;
+  font-size: 30px;
 }
